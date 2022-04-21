@@ -14,6 +14,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
 }
 
 .container{
@@ -66,8 +67,25 @@ body{
     outline: none;
     border: none;
     cursor: pointer;
+    width: 5rem;
     color: rgba(0, 0, 0, 0.737);
 }
+
+@media(max-width : 450px){
+    .translate-flex, .flex, .icons{
+        flex-direction: column;
+    }
+    .flex{
+        width: 4rem;
+    }
+    .translate{
+        display: flex;
+    }
+}
+
+.languages .option{
+    font-size: 0.7rem;
+} 
 
 .flex i{
     color: rgba(0, 0, 0, 0.737);
